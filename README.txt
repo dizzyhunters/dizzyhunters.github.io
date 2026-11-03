@@ -1,1 +1,1 @@
-Dizzy Hunters V4 – aktualisiert: Wochenplan und Uniform inklusive Begleiter. Leitung und separate Begleiterseite entfernt. Öffne index.html im Browser.
+Dizzy Hunters V7: Rangsystem – XP zuerst, Ränge untereinander; Bewerbungsinfos – vollständiger vierstufiger Ablauf. Öffne index.html.
