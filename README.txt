@@ -1,5 +1,16 @@
-Dizzy Hunters V6 – Spritefigur und begehbare Clubhaus-Innenräume.
-index.html im Browser öffnen. WASD/Pfeile bewegen, E/Leertaste/A interagieren.
-An der Haustür E drücken oder Schild anklicken. Im Innenraum am Schreibtisch E drücken oder anklicken; am unteren Ausgang wieder hinausgehen.
-Die Stadtgrafik bleibt wie in V5. Die Innenräume sind zunächst ein einheitliches Layout mit jeweils eigenen Inhalten.
-Gästebuch und Texteditor speichern weiterhin nur lokal. Mitgliederbereich noch ohne Authentifizierung.
+DIZZY HUNTERS – MODERN POKÉMON WEBSITE
+
+Öffne index.html im Browser.
+Dateien: index.html (Seiten), style.css (Design), script.js (Navigation und Inhalte).
+
+Veröffentlichen auf GitHub Pages:
+1. Neues Repository erstellen.
+2. Alle drei Webdateien ins Stammverzeichnis hochladen.
+3. Settings > Pages > Deploy from branch > main / root auswählen.
+
+Hinweise:
+- Clubdaten sind bewusst Platzhalter. Texte der Unterseiten stehen in script.js.
+- Das Gästebuch ist nur eine lokale Demo (localStorage), kein öffentliches Gästebuch.
+- Der Mitgliederbereich besitzt noch kein Login. Keine vertraulichen Inhalte dort eintragen.
+- Die grafischen Illustrationen sind mit CSS erstellt und können später durch eure Bilder ersetzt werden.
+- Externe Google Fonts benötigen eine Internetverbindung.
