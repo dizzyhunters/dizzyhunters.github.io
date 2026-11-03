@@ -133,6 +133,33 @@ const previousInteract=interact;interact=function(){if(currentRoom)return;let ne
 const previousMove=move;move=function(dx,dy){if(currentRoom){moveInside(dx,dy);return}previousMove(dx,dy)};
 document.addEventListener('keydown',e=>{if(currentRoom){if(e.key==='Escape'||e.key==='Backspace'){e.preventDefault();leaveRoom()}else {let k=e.key.toLowerCase();if(['arrowup','w','arrowdown','s','arrowleft','a','arrowright','d'].includes(k)){e.preventDefault();e.stopImmediatePropagation();moveInside((k==='arrowright'||k==='d')?1:(k==='arrowleft'||k==='a')?-1:0,(k==='arrowdown'||k==='s')?1:(k==='arrowup'||k==='w')?-1:0)}else if(k==='e'||k==='enter'||k===' '){e.preventDefault();e.stopImmediatePropagation();inspectInside()}}}},true);
 
+// V7.1: reliable mouse/touch house entry, including roof artwork and nameplates.
+const worldEntryZones=[
+ {place:'about',x:80,y:35,w:120,h:130},
+ {place:'members',x:485,y:30,w:120,h:130},
+ {place:'outfit',x:55,y:287,w:120,h:135},
+ {place:'apply',x:548,y:294,w:120,h:135},
+ {place:'schedule',x:285,y:289,w:120,h:135}
+];
+const worldElement=document.getElementById('world');
+worldElement.addEventListener('pointerup',function(e){
+ if(currentRoom||overlay.classList.contains('open'))return;
+ if(e.target.closest('.npc'))return;
+ const rect=worldElement.getBoundingClientRect();
+ const scaleX=worldElement.offsetWidth/rect.width,scaleY=worldElement.offsetHeight/rect.height;
+ const px=(e.clientX-rect.left)*scaleX,py=(e.clientY-rect.top)*scaleY;
+ const zone=worldEntryZones.find(z=>px>=z.x-10&&px<=z.x+z.w+10&&py>=z.y-8&&py<=z.y+z.h+8);
+ if(zone){e.preventDefault();e.stopPropagation();enterRoom(zone.place)}
+},true);
+// Make the permanent nameplates interactive as well.
+document.querySelectorAll('.location-label').forEach(label=>{
+ const nearest=worldEntryZones.reduce((best,z)=>{
+ const d=Math.hypot(label.offsetLeft-(z.x+z.w/2),label.offsetTop-(z.y+z.h/2));
+ return !best||d<best.d?{z,d}:best
+ },null);
+ if(nearest){label.style.pointerEvents='auto';label.style.cursor='pointer';label.setAttribute('role','button');label.tabIndex=0;label.setAttribute('aria-label',nearest.z.place+' betreten');label.addEventListener('click',()=>enterRoom(nearest.z.place));label.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();enterRoom(nearest.z.place)}})}
+});
+
 // V7: walkable interiors, collision-aware interaction zones, and an animated chibi avatar.
 let roomX=350,roomY=414,roomFacing='up',roomStep=0;
 const roomZones=[
