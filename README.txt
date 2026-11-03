@@ -11,3 +11,6 @@ Veröffentlichen auf GitHub Pages:
 3. Auf die bereitgestellte GitHub-Pages-Adresse warten.
 
 Dies ist eine eigenständige, Pokémon-inspirierte Fan-Website mit selbst gezeichneten Pixelgrafiken. Keine offiziellen Pokémon-Assets enthalten.
+
+Version 3: Eigene Dizzy-Hunters-Region mit Dizzy Town, zusätzlichen Terrain-Details, NPCs und Ortsschild.
+Geplante nächste Ausbaustufe: eigene handgezeichnete Tilesets, Kamerascrolling, Innenräume und weitere Routen.
