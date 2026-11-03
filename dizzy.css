@@ -20,3 +20,10 @@
 .dh-uniform-details{display:grid;gap:20px}.dh-uniform-card{border:1px solid #84ca9866;background:linear-gradient(140deg,#164434,#0c2923);border-radius:22px;padding:clamp(22px,3vw,34px)}.dh-uniform-card h2{font-size:27px;margin:13px 0 18px}.dh-uniform-card ul{list-style:none;padding:0;margin:0;display:grid;gap:13px}.dh-uniform-card li{color:#dcf3e3;padding:0 0 12px 25px;border-bottom:1px solid #a6d9b327;position:relative;line-height:1.5}.dh-uniform-card li:before{content:'✦';position:absolute;left:0;color:#a6ecb2}.dh-uniform-card li:last-child{border-bottom:0;padding-bottom:0}
 .dh-uniform-companion{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:clamp(24px,4vw,42px);border:1px solid #90d1a16e;border-radius:23px;background:linear-gradient(110deg,#194c37,#0c2b23)}.dh-uniform-companion h2{font-size:35px;margin:12px 0}.dh-uniform-companion p{color:#d9f1df;line-height:1.8}.dh-uniform-companion-icon{font-size:90px;color:#b4f6aa;opacity:.7}
 @media(max-width:800px){.dh-week-facts,.dh-week-info,.dh-uniform-layout{grid-template-columns:1fr}.dh-week-info-art img{height:270px}.dh-week-facts{gap:10px}.dh-week-facts>div{padding:15px}.dh-uniform-picture img{max-height:560px}}
+/* Uniform: artwork centered above two equally sized equipment cards */
+.dh-uniform-layout{display:flex;flex-direction:column;align-items:center;gap:26px}
+.dh-uniform-picture{width:min(100%,780px);box-sizing:border-box}
+.dh-uniform-picture img{max-height:590px;object-fit:contain}
+.dh-uniform-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;width:100%;align-items:stretch}
+.dh-uniform-card{height:100%;box-sizing:border-box}
+@media(max-width:700px){.dh-uniform-details{grid-template-columns:1fr}.dh-uniform-picture img{max-height:460px}}
