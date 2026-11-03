@@ -1,1 +1,5 @@
-Dizzy Hunters V5 – Vier beschriftete Clubhäuser. index.html im Browser öffnen. Gästebuch und Texteditor speichern nur lokal. Der Mitgliederbereich ist noch nicht passwortgeschützt. Die bestehende Pixel-Art-Karte aus V4 bleibt erhalten; die Beschriftungen liegen als HTML über der Grafik.
+Dizzy Hunters V6 – Spritefigur und begehbare Clubhaus-Innenräume.
+index.html im Browser öffnen. WASD/Pfeile bewegen, E/Leertaste/A interagieren.
+An der Haustür E drücken oder Schild anklicken. Im Innenraum am Schreibtisch E drücken oder anklicken; am unteren Ausgang wieder hinausgehen.
+Die Stadtgrafik bleibt wie in V5. Die Innenräume sind zunächst ein einheitliches Layout mit jeweils eigenen Inhalten.
+Gästebuch und Texteditor speichern weiterhin nur lokal. Mitgliederbereich noch ohne Authentifizierung.
