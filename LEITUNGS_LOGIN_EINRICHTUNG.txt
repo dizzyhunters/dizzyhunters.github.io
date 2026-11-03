@@ -1,0 +1,9 @@
+DIZZY HUNTERS – GEMEINSAMER PASSWORTZUGANG
+
+1. Öffne leitungs-login-config.js und ersetze LEITUNGS_EMAIL_HIER_EINTRAGEN durch die E-Mail-Adresse des bereits angelegten Supabase-Leitungsaccounts. Diese E-Mail-Adresse ist im veröffentlichten Code sichtbar. Verwende deshalb am besten eine separate Club-E-Mail-Adresse.
+2. Supabase > Authentication > Users: Für diesen Leitungsaccount ein NEUES starkes gemeinsames Passwort festlegen. Das zuvor im Chat genannte Passwort DHL4EVER nicht verwenden. Das Passwort NIEMALS in eine Website-Datei schreiben.
+3. Sicherstellen, dass genau dieser Account bereits in public.leitung mit seiner user_id eingetragen ist.
+4. Dateien ins GitHub-Pages-Repository hochladen. Die Leitungszentrale zeigt nur noch ein Passwortfeld; Supabase Auth prüft das Passwort und die bestehenden RLS-Regeln schützen die Bewerbungen.
+5. Das Passwort nur mit berechtigten Leitungsmitgliedern teilen. Gemeinsame Logins sind weniger sicher und nicht individuell nachvollziehbar. Bei Ausscheiden eines Mitglieds Passwort sofort ändern.
+
+WICHTIG: Ohne Schritt 1 ist die Anmeldung absichtlich deaktiviert. Es wurde kein Passwort im JavaScript hinterlegt.
