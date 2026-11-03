@@ -7,3 +7,5 @@ Wichtig: Keine Platino-Ladies-Logins, Supabase-Endpunkte, Zugangsdaten oder Admi
 Gästebuch: nur lokale Vorschau (localStorage), kein gemeinsamer Online-Dienst.
 Mitgliederbereich: noch kein Login. Bewerbungsfach: derzeit Link zur bestehenden Carrd.
 Die individuellen Namen, konkreten Anforderungen, Uniformdetails und XP-Stufen müssen noch ergänzt werden.
+
+Startseite V2: Layout wie Platino Ladies; neue Texte, Instagram/Carrd, Abschnitte entfernt, öffentlicher externer Besucherzähler (CounterAPI, Internet nötig). Bei API-Ausfall wird – angezeigt.
