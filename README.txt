@@ -1,16 +1,11 @@
-DIZZY HUNTERS – THE GREEN ADVENTURE
+DIZZY HUNTERS – THE DIZZY REGION | GRAFIKPROTOTYP V4
 
-Start: index.html in einem Browser öffnen.
-Steuerung: WASD oder Pfeiltasten, E/Leertaste zum Interagieren; auf Mobilgeräten Bildschirmtasten.
-Die fünf Gebäude führen zu den Clubbereichen. Das Pokédex-Menü ist jederzeit erreichbar.
-Mit „Inhalte bearbeiten“ können Texte im aktuellen Browser gespeichert werden (localStorage). Diese Änderungen sind NICHT automatisch für andere Besucher online sichtbar.
+START: index.html im Browser öffnen.
 
-Veröffentlichen auf GitHub Pages:
-1. Alle drei Dateien (index.html, style.css, script.js) in ein öffentliches Repository hochladen.
-2. Settings > Pages > Deploy from branch > main / root auswählen.
-3. Auf die bereitgestellte GitHub-Pages-Adresse warten.
+Neu: detaillierter grüner Titelbildschirm, hochwertige Dizzy-Town-Illustration, Spielfigur, Steuerung, fünf anklickbare Orte, Tutorial, Pokédex, Clubtexte-Editor und lokal gespeicherter Entdeckungsfortschritt.
 
-Dies ist eine eigenständige, Pokémon-inspirierte Fan-Website mit selbst gezeichneten Pixelgrafiken. Keine offiziellen Pokémon-Assets enthalten.
+WICHTIGE GRENZE: Diese Version verwendet eine illustrierte Kartenansicht als Hintergrund, noch kein vollständig gekacheltes Tileset mit Kollisionssystem und echten Innenräumen. Die Spielfigur bewegt sich als Overlay. Es ist ein visueller und interaktiver Prototyp, keine fertige RPG-Engine.
 
-Version 3: Eigene Dizzy-Hunters-Region mit Dizzy Town, zusätzlichen Terrain-Details, NPCs und Ortsschild.
-Geplante nächste Ausbaustufe: eigene handgezeichnete Tilesets, Kamerascrolling, Innenräume und weitere Routen.
+Grafik: eigens für dieses Projekt generierte Pixel-Art-Illustration. Bilder können später ersetzt werden.
+
+Texte und Fortschritt werden ausschließlich im jeweiligen Browser gespeichert (localStorage). Für gemeinsame Online-Bearbeitung wäre später ein Backend nötig.
