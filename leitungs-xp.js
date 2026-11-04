@@ -1,7 +1,7 @@
 (()=>{
  const panel=document.getElementById('dh-admin-panel'),form=document.getElementById('dh-xp-form'),select=document.getElementById('dh-xp-trainer'),msg=document.getElementById('dh-xp-message'),history=document.getElementById('dh-xp-history'),trainerList=document.getElementById('dh-xp-trainer-list');
  if(!panel||!form||!select||!msg||!history||!trainerList)return;
- const client=window.dizzyClient,url=window.DIZZY_SUPABASE?.url+'/functions/v1/trainer-xp-admin';
+ const client=window.dizzyClient,url=window.DIZZY_SUPABASE?.url+'/functions/v1/trainer-trainer-xp-admin';
  if(!client||!window.DIZZY_SUPABASE?.url){msg.textContent='Supabase-Verbindung fehlt. Bitte supabase-config.js und supabase-client.js prüfen.';return;}
  async function call(action,extra={}){
   const {data:{session},error:sessionError}=await client.auth.getSession();
