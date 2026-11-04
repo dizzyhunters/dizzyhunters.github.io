@@ -1,9 +1,13 @@
-DIZZY HUNTERS – CLUBNEWS ANZEIGE
+DIZZY HUNTERS – POKÉDEX GÄSTEBUCH
 
-Lade alle drei Dateien in das Hauptverzeichnis des GitHub-Repositories:
-- clubnews.html
-- clubnews-dizzy.js
-- news-design.css
+1. In Supabase > SQL Editor den Inhalt von SUPABASE_GAESTEBUCH.sql ausführen.
+2. In GitHub (Hauptordner) folgende 5 Website-Dateien hochladen bzw. ersetzen:
+   - gaestebuch.html
+   - gaestebuch-pokedex.css
+   - gaestebuch-pokedex.js
+   - leitungszentrale.html
+   - leitungs-gaestebuch.html
+3. GitHub Commit changes, Deployment abwarten, Strg+F5.
+4. Test: Gästebuch-Eintrag absenden, in Leitungszentrale > Gästebuch freigeben, öffentliche Anzeige prüfen.
 
-Vorhandene Dateien ersetzen. Nach dem Commit GitHub Pages abwarten, dann Strg+F5.
-News werden aus public.clubnews gelesen. Die Supabase SELECT-Policy muss anon Zugriff erlauben.
+Hinweise: Besucher dürfen nur Einträge einreichen, nicht selbst freigeben. Keine vertraulichen Daten im öffentlichen Gästebuch speichern. Ohne Captcha/Rate-Limit ist automatisierter Spam möglich; für stärkeren Spamschutz später serverseitige Validierung/Captcha ergänzen.
