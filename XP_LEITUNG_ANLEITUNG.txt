@@ -1,0 +1,22 @@
+DIZZY HUNTERS – XP-VERWALTUNG IN DER LEITUNGSZENTRALE
+
+VORAUSSETZUNG: Das Trainer-XP-System muss bereits eingerichtet sein:
+SUPABASE_TRAINER_XP.sql, Edge Function trainer-xp und die Mitgliederdateien
+missionen.html / trainer-xp.js / trainer-xp.css müssen installiert sein.
+
+1. Supabase SQL Editor: SUPABASE_XP_LEITUNG.sql ausführen.
+2. Edge Functions: trainer-xp aktualisieren mit supabase/functions/trainer-xp/index.ts.
+   Verify JWT bleibt für diese Mitglieder-Funktion OFF; Profile nutzen PIN/Token.
+3. Neue Edge Function trainer-xp-admin erstellen mit
+   supabase/functions/trainer-xp-admin/index.ts.
+   Verify JWT OFF (die Funktion prüft das Supabase-Access-Token selbst UND
+   die Mitgliedschaft in public.leitung; keine öffentlichen Schreibrechte).
+4. GitHub Hauptordner: leitungs-missionen.html und leitungs-xp.js hochladen.
+5. Als Leitung anmelden -> Missionen -> Trainer-XP verwalten.
+
+XP aus erledigten Missionen und von der Leitung vergebene Bonus-XP werden
+in der Rangliste und im eigenen Profil zusammengezählt. Bonusbuchungen lassen
+sich einzeln rückgängig machen. Trainer erscheinen nach Selbstregistrierung.
+
+WICHTIG: Bereits bestehende Trainer-XP-Funktion muss ersetzt werden, sonst
+werden die Bonus-XP noch nicht in die Rangliste eingerechnet.
