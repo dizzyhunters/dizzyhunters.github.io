@@ -1,13 +1,11 @@
-DIZZY HUNTERS – POKÉDEX GÄSTEBUCH
+DIZZY HUNTERS – STARTSEITE & DIZZY BEREICH
 
-1. In Supabase > SQL Editor den Inhalt von SUPABASE_GAESTEBUCH.sql ausführen.
-2. In GitHub (Hauptordner) folgende 5 Website-Dateien hochladen bzw. ersetzen:
-   - gaestebuch.html
-   - gaestebuch-pokedex.css
-   - gaestebuch-pokedex.js
-   - leitungszentrale.html
-   - leitungs-gaestebuch.html
-3. GitHub Commit changes, Deployment abwarten, Strg+F5.
-4. Test: Gästebuch-Eintrag absenden, in Leitungszentrale > Gästebuch freigeben, öffentliche Anzeige prüfen.
+Lade diese 4 Dateien in den HAUPTORDNER deines GitHub-Repositories und ersetze die vorhandenen Dateien:
+- index.html
+- mitglieder.html
+- script.js
+- startseite-update.css (neu)
 
-Hinweise: Besucher dürfen nur Einträge einreichen, nicht selbst freigeben. Keine vertraulichen Daten im öffentlichen Gästebuch speichern. Ohne Captcha/Rate-Limit ist automatisierter Spam möglich; für stärkeren Spamschutz später serverseitige Validierung/Captcha ergänzen.
+Bestehende CSS-Dateien, Bilder, Login- und Supabase-Dateien NICHT loeschen.
+Nach Commit und Deployment Strg+F5 druecken.
+Die Navigation wird auf allen Seiten durch script.js von Mitgliederbereich auf Dizzy Bereich umbenannt.
