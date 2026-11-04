@@ -1,9 +1,9 @@
-DIZZY HUNTERS – TRAINER-VERWALTUNG
+DIZZY HUNTERS – GETRENNTE LEITUNGSSEITEN
 
-1. In Supabase > Edge Functions > trainer-xp-admin > Code den Inhalt aus trainer-xp-admin-index.ts vollständig einsetzen und Deploy updates klicken. Die Funktion muss weiterhin ihre bestehende Supabase-Leitungsprüfung behalten.
-2. In GitHub im Hauptverzeichnis leitungs-missionen.html und leitungs-xp.js ersetzen. Commit changes.
-3. Nach Deployment Leitungszentrale > Missionen öffnen und Aktualisieren klicken.
-4. Wenn 0 Trainer angezeigt werden: auf der öffentlichen Missionsseite zuerst ein Trainerprofil mit SSO-Name und PIN registrieren. Wenn ein Fehler angezeigt wird: Text prüfen (z.B. Edge Function nicht bereitgestellt oder Leitungssitzung fehlt).
-5. Löschen eines Trainerprofils entfernt unwiderruflich die PIN, abgeschlossenen Missionen und Bonus-XP.
+1. Alle 6 HTML/JS-Dateien aus dieser ZIP in das Hauptverzeichnis des GitHub-Repositories dizzyhunters.github.io hochladen (vorhandene Dateien ersetzen).
+2. Warten, bis GitHub Pages aktualisiert ist; dann mit Strg+F5 neu laden.
+3. In der Leitungszentrale erscheinen jetzt zwei neue Buttons: XP verwalten und Trainer verwalten.
+4. Die Missionen-Seite enthält nur noch die Missionen.
+5. Voraussetzung: Die Supabase Edge Function xp-admin ist bereits eingerichtet und erreichbar. Es sind keine SQL-Änderungen nötig.
 
-Es sind keine neuen SQL-Befehle nötig, sofern das Trainer-XP-System und SUPABASE_XP_LEITUNG.sql bereits erfolgreich eingerichtet wurden.
+HINWEIS: Die Funktionsadresse ist auf /functions/v1/xp-admin eingestellt, wie in deinem Supabase-Screenshot.
