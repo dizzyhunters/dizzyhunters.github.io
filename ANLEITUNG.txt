@@ -1,17 +1,13 @@
-DIZZY HUNTERS – EINFACHER MITGLIEDERLOGIN
+Dizzy Hunters – getrennte Mitgliederseiten
 
-Passwort im Browser: DIZZY4EVER
+Diese vier Dateien ins HAUPTVERZEICHNIS des GitHub-Repositories hochladen:
+- mitglieder.html (ersetzen)
+- missionen.html (NEU)
+- clubnews.html (NEU)
+- missionen-dizzy.js (ersetzen/hochladen)
 
-1. Auf GitHub nur diese zwei Dateien hochladen:
-   - mitglieder.html
-   - mitglieder-einfach-login.js
-   Die vorhandene missionen-dizzy.js unverändert lassen.
-2. Falls nach dem Login keine Missionen erscheinen (Berechtigungsfehler),
-   SUPABASE_MISSIONEN_LESEN.sql im Supabase SQL Editor ausführen.
-3. GitHub Pages neu laden (Strg+F5).
+Keine SQL-Änderung erforderlich. Das bisherige Login-Skript und CSS bleiben unverändert.
 
-WICHTIG: Dieser Zugang ist wie ein einfacher Website-Passwortschirm,
-KEINE echte Zugriffssperre. HTML/JS sind öffentlich; Missionen werden
-mit dem beigefügten SQL für jedermann über die API lesbar.
-Keine privaten oder sensiblen Inhalte dort eintragen.
-Die Leitungszentrale und Bewerbungen bleiben separat geschützt.
+WICHTIG: Der gemeinsame Passwortschutz ist nur eine Anzeige-Sperre im Browser, kein echter Schutz privater Daten. Missionen sind bei öffentlicher Supabase-Leseregel weiterhin öffentlich abrufbar. Keine sensiblen Daten einstellen.
+
+Falls Missionen nicht geladen werden, prüfen wir anschließend getrennt die Supabase-Abfrage.
