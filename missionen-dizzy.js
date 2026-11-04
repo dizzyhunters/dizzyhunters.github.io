@@ -33,7 +33,7 @@
   });
   // The existing leadership session must be authenticated and authorized by Supabase RLS.
   const panel=document.getElementById('dh-admin-panel');
-  if(panel){const observer=new MutationObserver(()=>{const section=document.getElementById('dh-missions-admin');if(section)section.hidden=panel.hidden || document.querySelector('[data-tab="missionen"]')?.getAttribute('aria-pressed')!=='true';if(!panel.hidden)load()});observer.observe(panel,{attributes:true,attributeFilter:['hidden']});document.getElementById('dh-missions-admin').hidden=true;}
+  if(panel){const observer=new MutationObserver(()=>{const section=document.getElementById('dh-missions-admin');if(section)section.hidden=panel.hidden;if(!panel.hidden)load()});observer.observe(panel,{attributes:true,attributeFilter:['hidden']});document.getElementById('dh-missions-admin').hidden=true;}
  }
  load();
 })();
