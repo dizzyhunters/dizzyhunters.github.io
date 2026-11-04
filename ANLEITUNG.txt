@@ -1,14 +1,17 @@
-DIZZY HUNTERS – LEITUNGSZENTRALE MIT 3 UNTERSEITEN
+DIZZY HUNTERS – MITGLIEDERBEREICH UND MISSIONEN
 
-Diese 5 Dateien im Hauptverzeichnis des GitHub-Repositories hochladen und bestehende leitungszentrale.html ersetzen:
-- leitungszentrale.html
-- leitungs-bewerbungen.html
-- leitungs-missionen.html
-- leitungs-news.html
-- leitungs-portal.js
+Diese drei Dateien in das HAUPTVERZEICHNIS des GitHub-Repositories hochladen:
+- mitglieder.html (Clubkalender entfernt; nur Missionen & XP und Clubnews)
+- missionen.html (lädt eine eigene Missions-Anzeige)
+- missionen-anzeige.js (NEU: lädt Missionen direkt aus Supabase und zeigt Fehler an)
 
-Bestehende Dateien wie leitungs-login-config.js, leitung-dizzy.js, missionen-dizzy.js, supabase-config.js, supabase-client.js und dizzy.css NICHT löschen oder überschreiben.
+Bestehende Dateien NICHT löschen. Insbesondere leitungszentrale.html,
+missionen-dizzy.js und die Supabase-Konfiguration nicht verändern.
 
-Die News-Unterseite ist zunächst nur ein Platzhalter; eine News-Datenbankfunktion wurde noch nicht erstellt.
+Nach Commit GitHub Pages-Deployment abwarten und mit Strg+F5 neu laden.
+Falls weiterhin keine Missionen erscheinen, die Fehlermeldung auf
+missionen.html mitteilen. Keine weiteren SQL-Rechte auf Verdacht ändern.
 
-Keine SQL-Änderungen notwendig. Die bestehenden Bewerbungs- und Missionsfunktionen werden weiterverwendet.
+HINWEIS: Der einfache gemeinsame Passwortbildschirm ist keine echte
+Sicherheitsgrenze. Die aktuell öffentlich lesbaren Missionen dürfen keine
+vertraulichen personenbezogenen Informationen enthalten.
