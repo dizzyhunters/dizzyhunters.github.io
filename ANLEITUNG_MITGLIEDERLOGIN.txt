@@ -1,0 +1,21 @@
+DIZZY HUNTERS – SICHERER MITGLIEDERLOGIN
+
+1. Supabase > SQL Editor: SUPABASE_MITGLIEDERLOGIN.sql vollständig ausführen.
+   Dadurch wird die öffentliche Leseberechtigung der Missionen aufgehoben.
+2. GitHub: Diese vier Dateien im Hauptverzeichnis ersetzen/hochladen:
+   mitglieder.html, mitglieder-login.js (NEU), missionen-dizzy.js, dizzy.css.
+   Keine Konfigurationsdateien oder Leitungsdateien überschreiben.
+3. Für jedes Clubmitglied: Supabase > Authentication > Users > Add user
+   (E-Mail und eigenes Passwort; falls nötig E-Mail bestätigen).
+   Danach User UID kopieren und im SQL Editor ausführen:
+   INSERT INTO public.club_mitglieder(user_id)
+   VALUES ('HIER-USER-UID') ON CONFLICT (user_id) DO NOTHING;
+4. Website mit Strg+F5 neu laden. Mit Mitglieds-E-Mail und Passwort anmelden.
+
+SICHERHEIT:
+- Missionen sind nach Schritt 1 nicht mehr anonym per Supabase API lesbar.
+- Nur freigeschaltete Nutzer erhalten Missionen über die RLS-Policy.
+- Der Leitungsaccount bleibt freigeschaltet und die Leitungszentrale bleibt unverändert.
+- E-Mail/Passwort nie im öffentlichen Website-Code hinterlegen.
+- Die Seite 'wochenplan.html' bleibt öffentlich, da sie auch in der Hauptnavigation verlinkt ist.
+- Andere öffentliche Datenquellen/Clubnews benötigen bei späterer Umsetzung eigene RLS-Regeln.

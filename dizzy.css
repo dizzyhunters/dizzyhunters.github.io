@@ -98,3 +98,12 @@
 .dh-portal-tile span{font-size:2rem}.dh-portal-tile h3{margin:12px 0 7px}.dh-portal-tile p{font-size:.9rem}
 #dh-mitglieder-missionen{scroll-margin-top:90px}
 [hidden]{display:none!important}
+
+/* Protected Dizzy Hunters member login */
+.dh-member-gate{max-width:640px;margin:0 auto 24px;text-align:center}
+.dh-member-login{display:grid;gap:18px;text-align:left;max-width:440px;margin:25px auto}
+.dh-member-login label{display:grid;gap:7px;font-weight:600}
+.dh-member-login input{width:100%;border:1px solid rgba(125,206,145,.45);border-radius:12px;padding:13px 15px;background:rgba(10,36,26,.6);color:#f5fff5;font:inherit}
+.dh-member-login input:focus{outline:2px solid #84dca2;outline-offset:2px}
+#dh-member-login-message:not(:empty){margin-top:12px}
+[hidden]{display:none!important}

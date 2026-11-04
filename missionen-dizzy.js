@@ -35,5 +35,6 @@
   const panel=document.getElementById('dh-admin-panel');
   if(panel){const observer=new MutationObserver(()=>{const section=document.getElementById('dh-missions-admin');if(section)section.hidden=panel.hidden || document.querySelector('[data-tab="missionen"]')?.getAttribute('aria-pressed')!=='true';if(!panel.hidden)load()});observer.observe(panel,{attributes:true,attributeFilter:['hidden']});document.getElementById('dh-missions-admin').hidden=true;}
  }
- load();
+ if(editor) load();
+ else document.addEventListener('dizzy-member-authorized',load);
 })();
