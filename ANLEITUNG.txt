@@ -1,12 +1,26 @@
-DIZZY HUNTERS - SUPABASE SEITENAUFRUFE
+DIZZY HUNTERS – TRAINER-XP
 
-1. In Supabase > SQL Editor > New query die Datei SUPABASE_SEITENAUFRUFE.sql komplett ausfuehren.
-2. Bei GitHub im Repository dizzyhunters/dizzyhunters.github.io NUR die drei Website-Dateien hochladen bzw. ersetzen:
-   - index.html
-   - script.js
-   - seitenaufrufe-supabase.js
-3. Commit changes und GitHub Pages Deployment abwarten. Dann Startseite mit Strg+F5 neu laden.
-4. Bei jedem Laden der Startseite wird genau eine Datenbank-Inkrementierung angefordert. Mehrfaches Neuladen zaehlt mehrfach. Die Zahl beginnt bei 0 (alte CounterAPI-Zahlen werden nicht uebernommen).
-5. Bei Fehlern: Browser F12 > Console/Network, nach 'seitenaufruf_zaehlen' suchen.
+1) Supabase > SQL Editor: SUPABASE_TRAINER_XP.sql vollständig ausführen.
+2) Supabase > Edge Functions > Deploy new function > Via Editor:
+   Name exakt: trainer-xp
+   Inhalt: supabase/functions/trainer-xp/index.ts
+   Deploy klicken.
+3) Edge Functions > trainer-xp > Details: Verify JWT = OFF.
+   WICHTIG: Die Function prüft stattdessen die individuelle Trainer-PIN und das serverseitige Sitzungstoken.
+   SUPABASE_SERVICE_ROLE_KEY und SUPABASE_URL sind normalerweise automatisch als Supabase Function Secrets verfügbar.
+   Niemals Service-Role-Key in GitHub oder in die HTML/JS-Dateien eintragen!
+4) Diese drei Dateien im GitHub-Repository dizzyhunters.github.io hochladen:
+   missionen.html, trainer-xp.js, trainer-xp.css
+   Die anderen bestehenden Dateien nicht überschreiben.
+5) Website neu laden, im Dizzy Bereich > Missionen & XP ein Profil registrieren.
+   Eine Mission abhaken und Rangliste kontrollieren.
 
-Sicherheit: Der Zaehlaufruf ist absichtlich oeffentlich. Er kann daher auch automatisiert von Bots aufgerufen werden. Keine personenbezogenen Daten werden gespeichert.
+HINWEISE:
+- Bestehende Missionen und deren XP werden weiterverwendet. Bei späteren XP-Änderungen einer Mission ändert sich die Rangliste entsprechend.
+- Mitgliedsgebundene Missionen müssen exakt den SSO-Namen enthalten; sonst sind sie nur dem jeweiligen Namen zugeordnet.
+- Das gemeinsame Mitgliederpasswort bleibt bestehen; diese Funktion verwendet zusätzlich individuelle PINs.
+- PINs sind serverseitig mit PBKDF2 + Salt gespeichert, aber keine vollständige Identitätsprüfung. Jeder mit dem gemeinsamen Passwort kann neue Namen anlegen. Für höhere Sicherheit sind persönliche Konten/Einladungen nötig.
+- Bei PIN-Verlust kann die Leitung im Supabase Table Editor das Trainerprofil löschen; damit gehen auch dessen Mission-Häkchen verloren. Nicht unüberlegt löschen.
+- Die öffentliche Rangliste zeigt SSO-Namen, XP und Rang. Kein privater Inhalt in SSO-Namen eintragen.
+- Die Anzeige aktualisiert sich bei geöffneter Seite ungefähr alle 30 Sekunden und sofort nach einem Häkchen.
+- GitHub Pages ist statisch; es sind keine Änderungen an der Leitungszentrale erforderlich.
