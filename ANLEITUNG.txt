@@ -1,9 +1,9 @@
-DIZZY HUNTERS – Leitungs-Unterseiten Fix
+DIZZY HUNTERS – CLUBNEWS ANZEIGE
 
-Alle 6 Dateien aus dieser ZIP ins Hauptverzeichnis des GitHub-Repositories hochladen und vorhandene ersetzen.
+Lade alle drei Dateien in das Hauptverzeichnis des GitHub-Repositories:
+- clubnews.html
+- clubnews-dizzy.js
+- news-design.css
 
-Die bestehende leitungs-login-config.js NICHT ersetzen. Kein neuer SQL-Code nötig.
-
-Nach Anmeldung in leitungszentrale.html bleibt die Supabase-Sitzung auf den Unterseiten erhalten. Bei Missionen wird das Bearbeitungsformular erst nach Prüfung des Leitungsaccounts angezeigt.
-
-Nach GitHub Pages Veröffentlichung Strg+F5 und erneut testen.
+Vorhandene Dateien ersetzen. Nach dem Commit GitHub Pages abwarten, dann Strg+F5.
+News werden aus public.clubnews gelesen. Die Supabase SELECT-Policy muss anon Zugriff erlauben.
