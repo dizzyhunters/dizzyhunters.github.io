@@ -1,9 +1,8 @@
-DIZZY HUNTERS – GETRENNTE LEITUNGSSEITEN
+DIZZY HUNTERS – XP-RANGFORTSCHRITT
 
-1. Alle 6 HTML/JS-Dateien aus dieser ZIP in das Hauptverzeichnis des GitHub-Repositories dizzyhunters.github.io hochladen (vorhandene Dateien ersetzen).
-2. Warten, bis GitHub Pages aktualisiert ist; dann mit Strg+F5 neu laden.
-3. In der Leitungszentrale erscheinen jetzt zwei neue Buttons: XP verwalten und Trainer verwalten.
-4. Die Missionen-Seite enthält nur noch die Missionen.
-5. Voraussetzung: Die Supabase Edge Function xp-admin ist bereits eingerichtet und erreichbar. Es sind keine SQL-Änderungen nötig.
+1. Beide Dateien trainer-xp.js und trainer-xp.css im GitHub-Repository diz zyhunters.github.io (ohne Leerzeichen: dizzyhunters.github.io) ersetzen.
+2. Commit changes.
+3. Nach GitHub-Pages-Veröffentlichung Trainer-Missionen mit Strg+F5 neu laden und mit Trainer-PIN anmelden.
 
-HINWEIS: Die Funktionsadresse ist auf /functions/v1/xp-admin eingestellt, wie in deinem Supabase-Screenshot.
+Der Balken erscheint unter dem aktuellen Rang und aktualisiert sich nach Missionsabschlüssen und XP-Gutschriften. Ränge: Newbie 0, Rookie 150, Pokétrainer 300, Pokémeister 1000, Arenaleiter 1500. Bei 1500+ XP erscheint „Höchster XP-Rang erreicht“.
+Keine Änderung an Supabase oder bestehenden Daten nötig.
