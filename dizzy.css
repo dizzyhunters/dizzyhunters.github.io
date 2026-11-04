@@ -87,3 +87,14 @@
 
 /* Dizzy Hunters weekly missions */
 .dh-missions-section{margin-top:26px}.dh-mission-form{display:grid;gap:16px;margin:20px 0 30px}.dh-mission-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.dh-mission-form label{display:grid;gap:7px;font-weight:650}.dh-mission-form input,.dh-mission-form textarea{width:100%;box-sizing:border-box;border:1px solid rgba(132,210,156,.4);border-radius:13px;background:rgba(7,30,23,.65);color:#f1fff6;padding:12px;font:inherit}.dh-mission-week{margin:20px 0 28px}.dh-mission-week-title{margin-bottom:12px}.dh-missions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.dh-mission-card{border:1px solid rgba(133,221,155,.27);border-radius:18px;padding:20px;background:linear-gradient(145deg,rgba(40,93,65,.28),rgba(10,37,30,.48));box-shadow:0 8px 22px rgba(0,0,0,.12)}.dh-mission-card h3{margin:0 0 8px}.dh-mission-meta{font-size:.87rem;opacity:.75;margin:0 0 10px}.dh-mission-description{white-space:pre-wrap;overflow-wrap:anywhere}.dh-mission-card .dh-admin-entry-actions{margin-top:16px}@media(max-width:650px){.dh-mission-fields{grid-template-columns:1fr}}
+
+/* Navigation der Leitungszentrale und klickbare Mitglieder-Kacheln */
+.dh-section-nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:24px 0 30px}
+.dh-section-tab{cursor:pointer;border:1px solid rgba(146,229,170,.4);background:linear-gradient(135deg,rgba(23,77,53,.88),rgba(9,38,32,.96));color:#eaffed;border-radius:18px;padding:16px 28px;font:inherit;font-weight:750;transition:transform .2s,border-color .2s,background .2s;min-width:170px}
+.dh-section-tab:hover,.dh-section-tab:focus-visible{transform:translateY(-2px);border-color:#a3f4b5;outline-offset:3px}
+.dh-section-tab[aria-pressed="true"]{background:linear-gradient(130deg,#267b50,#155039);border-color:#a3f4b5;box-shadow:0 6px 20px rgba(38,123,80,.28)}
+.dh-portal-grid>a.dh-portal-tile{display:block;text-decoration:none;color:inherit;padding:22px 14px;border-radius:17px;border:1px solid rgba(154,224,170,.3);background:rgba(41,110,73,.2);transition:transform .2s,background .2s,border-color .2s}
+.dh-portal-grid>a.dh-portal-tile:hover,.dh-portal-grid>a.dh-portal-tile:focus-visible{transform:translateY(-3px);background:rgba(53,135,88,.38);border-color:#a3f4b5;outline-offset:3px}
+.dh-portal-tile span{font-size:2rem}.dh-portal-tile h3{margin:12px 0 7px}.dh-portal-tile p{font-size:.9rem}
+#dh-mitglieder-missionen{scroll-margin-top:90px}
+[hidden]{display:none!important}
