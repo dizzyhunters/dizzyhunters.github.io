@@ -1,11 +1,12 @@
-DIZZY HUNTERS – STARTSEITE & DIZZY BEREICH
+DIZZY HUNTERS - SUPABASE SEITENAUFRUFE
 
-Lade diese 4 Dateien in den HAUPTORDNER deines GitHub-Repositories und ersetze die vorhandenen Dateien:
-- index.html
-- mitglieder.html
-- script.js
-- startseite-update.css (neu)
+1. In Supabase > SQL Editor > New query die Datei SUPABASE_SEITENAUFRUFE.sql komplett ausfuehren.
+2. Bei GitHub im Repository dizzyhunters/dizzyhunters.github.io NUR die drei Website-Dateien hochladen bzw. ersetzen:
+   - index.html
+   - script.js
+   - seitenaufrufe-supabase.js
+3. Commit changes und GitHub Pages Deployment abwarten. Dann Startseite mit Strg+F5 neu laden.
+4. Bei jedem Laden der Startseite wird genau eine Datenbank-Inkrementierung angefordert. Mehrfaches Neuladen zaehlt mehrfach. Die Zahl beginnt bei 0 (alte CounterAPI-Zahlen werden nicht uebernommen).
+5. Bei Fehlern: Browser F12 > Console/Network, nach 'seitenaufruf_zaehlen' suchen.
 
-Bestehende CSS-Dateien, Bilder, Login- und Supabase-Dateien NICHT loeschen.
-Nach Commit und Deployment Strg+F5 druecken.
-Die Navigation wird auf allen Seiten durch script.js von Mitgliederbereich auf Dizzy Bereich umbenannt.
+Sicherheit: Der Zaehlaufruf ist absichtlich oeffentlich. Er kann daher auch automatisiert von Bots aufgerufen werden. Keine personenbezogenen Daten werden gespeichert.
