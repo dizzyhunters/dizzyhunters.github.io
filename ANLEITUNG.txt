@@ -1,0 +1,17 @@
+DIZZY HUNTERS – EINFACHER MITGLIEDERLOGIN
+
+Passwort im Browser: DIZZY4EVER
+
+1. Auf GitHub nur diese zwei Dateien hochladen:
+   - mitglieder.html
+   - mitglieder-einfach-login.js
+   Die vorhandene missionen-dizzy.js unverändert lassen.
+2. Falls nach dem Login keine Missionen erscheinen (Berechtigungsfehler),
+   SUPABASE_MISSIONEN_LESEN.sql im Supabase SQL Editor ausführen.
+3. GitHub Pages neu laden (Strg+F5).
+
+WICHTIG: Dieser Zugang ist wie ein einfacher Website-Passwortschirm,
+KEINE echte Zugriffssperre. HTML/JS sind öffentlich; Missionen werden
+mit dem beigefügten SQL für jedermann über die API lesbar.
+Keine privaten oder sensiblen Inhalte dort eintragen.
+Die Leitungszentrale und Bewerbungen bleiben separat geschützt.
