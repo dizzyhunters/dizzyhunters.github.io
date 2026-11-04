@@ -1,13 +1,14 @@
-Dizzy Hunters – getrennte Mitgliederseiten
+DIZZY HUNTERS – LEITUNGSZENTRALE MIT 3 UNTERSEITEN
 
-Diese vier Dateien ins HAUPTVERZEICHNIS des GitHub-Repositories hochladen:
-- mitglieder.html (ersetzen)
-- missionen.html (NEU)
-- clubnews.html (NEU)
-- missionen-dizzy.js (ersetzen/hochladen)
+Diese 5 Dateien im Hauptverzeichnis des GitHub-Repositories hochladen und bestehende leitungszentrale.html ersetzen:
+- leitungszentrale.html
+- leitungs-bewerbungen.html
+- leitungs-missionen.html
+- leitungs-news.html
+- leitungs-portal.js
 
-Keine SQL-Änderung erforderlich. Das bisherige Login-Skript und CSS bleiben unverändert.
+Bestehende Dateien wie leitungs-login-config.js, leitung-dizzy.js, missionen-dizzy.js, supabase-config.js, supabase-client.js und dizzy.css NICHT löschen oder überschreiben.
 
-WICHTIG: Der gemeinsame Passwortschutz ist nur eine Anzeige-Sperre im Browser, kein echter Schutz privater Daten. Missionen sind bei öffentlicher Supabase-Leseregel weiterhin öffentlich abrufbar. Keine sensiblen Daten einstellen.
+Die News-Unterseite ist zunächst nur ein Platzhalter; eine News-Datenbankfunktion wurde noch nicht erstellt.
 
-Falls Missionen nicht geladen werden, prüfen wir anschließend getrennt die Supabase-Abfrage.
+Keine SQL-Änderungen notwendig. Die bestehenden Bewerbungs- und Missionsfunktionen werden weiterverwendet.
