@@ -1,0 +1,11 @@
+DIZZY HUNTERS – CLUBKALENDER
+
+1. Supabase öffnen → SQL Editor → New query.
+2. Inhalt der Datei SUPABASE_CLUBKALENDER.sql einfügen und Run klicken.
+3. Alle Dateien aus diesem ZIP ins GitHub-Repository hochladen und vorhandene Dateien ersetzen.
+4. GitHub Pages veröffentlichen lassen; ggf. Seite neu laden.
+5. Im Dizzy Bereich auf „Clubkalender“ klicken.
+6. In der Leitungszentrale anmelden und „Kalenderverwaltung“ öffnen.
+7. Termine über das Formular eintragen, bearbeiten oder löschen.
+
+WICHTIG: Die Kalendertermine sind über Supabase technisch öffentlich lesbar (auch wenn die Webseite das Clubpasswort verlangt). Deshalb keine privaten oder vertraulichen Informationen eintragen. Nur authentifizierte Leitungsaccounts mit Eintrag in der Tabelle „leitung“ dürfen Änderungen speichern. Die bisherigen Login-Mechanismen bleiben unverändert.
