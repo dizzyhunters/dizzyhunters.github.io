@@ -23,3 +23,17 @@ input,textarea,select{font-family:'Nunito',sans-serif}main input,main textarea,m
 .card :is(h1,h2,h3,h4,p,li,a,small,strong,span),.topic-link,.dh-uniform-card :is(h2,h3,p,li),.dh-uniform-companion :is(h2,h3,p),.rank-card :is(h2,h3,p),.pl-wait-column :is(h2,h3,p),.notice :is(h2,h3,p),.dh-portal :is(h1,h2,h3,p),.dh-admin-group :is(h2,h3,p),.dh-admin-entry :is(h3,h4,p),.dh-mission-card :is(h3,p),.dh-member-gate :is(h2,p),.dh-portal-tile :is(h3,p),.dh-home-join :is(h2,p),.dh-home-strip :is(strong,small),.dh-home-mini span,.application-fields :is(label,legend){color:#f5f7ed!important}
 .dh-admin-sub,.dh-admin-details summary,.dh-admin-answers dt,.dh-admin-answers dd,.dh-mission-meta,.dh-mission-description{color:#c7d9bf!important}
 .dh-uniform-card h2,.dh-uniform-companion h2{background:linear-gradient(#67aa38,#236b2c)!important;color:white!important}
+
+/* Kontrastkorrektur: grosse zuvor cremeweisse Seitenflaeche dunkelgruen */
+:root{--dh-ink:#f3f7e9;--dh-cream:#112a1c;--card:#162e20;--silver:#f3f7e9}
+.wrap{background:radial-gradient(ellipse at 40% 0%,#244b31 0%,#142e20 60%,#0b1b13 100%)!important;color:#f3f7e9!important;border-color:#8cb45d!important;outline-color:#294f2c!important;box-shadow:0 0 0 9px #071b11c9,0 22px 65px #051b12b0,inset 0 0 0 3px #4c7e43!important}
+.wrap h1,.wrap h2,.wrap h3,.wrap h4,.wrap p,.wrap .lead,.wrap .eyebrow,.wrap .tag,.wrap .dh-back a,.wrap .dh-uniform-heading>p{color:#f3f7e9}
+.wrap .page-hero h1,.wrap .dh-uniform-heading h1{color:#173b25!important}
+.wrap .btn,.wrap .dh-section-tab,.wrap .dh-uniform-card h2,.wrap .dh-uniform-companion h2{color:white!important}
+.wrap .btn.ghost{color:#255e2b!important}
+.wrap .card,.wrap .topic-link,.wrap .dh-uniform-card,.wrap .dh-uniform-companion,.wrap .rank-card,.wrap .pl-wait-column,.wrap .dh-portal,.wrap .dh-admin-group,.wrap .dh-admin-entry,.wrap .dh-mission-card,.wrap .dh-member-gate{color:#f5f7ed!important}
+.wrap .card :is(h1,h2,h3,h4,p,li,a,small,strong,span),.wrap .dh-uniform-card :is(p,li),.wrap .dh-uniform-companion p{color:#f5f7ed!important}
+.wrap input,.wrap textarea,.wrap select{background:#f7f9ee!important;color:#173c27!important}
+.wrap input::placeholder,.wrap textarea::placeholder{color:#607865!important}
+.wrap label,.wrap legend{color:#eaf3df!important}
+.wrap .sub a,.wrap .page-hero h1,.wrap .dh-uniform-heading h1{color:#173b25!important}
